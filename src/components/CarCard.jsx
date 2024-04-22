@@ -7,14 +7,12 @@ function CarCard() {
 
   const fetcher = async () =>
     fetchCar().then((res) => {
-      console.log(res);
       return res;
     });
 
   const { data: car } = useSWR("car", fetcher, {
     suspense: true,
   });
-  console.log(car);
 
   function switchModal() {
     setModalOpen((prev) => !prev);

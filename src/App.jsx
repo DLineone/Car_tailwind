@@ -4,7 +4,7 @@ import LoadingCarCard from "./components/LoadingCarCard";
 
 function App() {
   return (
-    <div className="flex h-full w-full items-center justify-center bg-slate-400">
+    <div className="flex h-full w-full flex-col items-center justify-center gap-10 bg-slate-400">
       <Suspense fallback={<LoadingCarCard />}>
         <CarCard />
       </Suspense>
