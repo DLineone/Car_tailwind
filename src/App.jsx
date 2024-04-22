@@ -1,9 +1,6 @@
-/* eslint-disable no-unused-vars */
 import { Suspense } from "react";
 import CarCard from "./components/CarCard";
 import LoadingCarCard from "./components/LoadingCarCard";
-import useSWR from "swr";
-import { fetchCar } from "./utils";
 
 function App() {
   return (
